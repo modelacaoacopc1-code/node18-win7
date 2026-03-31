@@ -59,4 +59,4 @@ jobs:
         run: npx envinfo
 
       - name: Build
-        run: ./vcbuild.bat ${{ matrix.arch }}
+        run: ./vcbuild.bat target_arch=${{ matrix.arch }}
