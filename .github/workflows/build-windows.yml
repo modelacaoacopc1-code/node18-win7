@@ -38,6 +38,7 @@ jobs:
     strategy:
       matrix:
         windows: [windows-2019, windows-2022]
+        arch: [x86,x64]
       fail-fast: false
     runs-on: ${{ matrix.windows }}
 
@@ -58,4 +59,4 @@ jobs:
         run: npx envinfo
 
       - name: Build
-        run: ./vcbuild.bat
+        run: ./vcbuild.bat ${{ matrix.arch }}
