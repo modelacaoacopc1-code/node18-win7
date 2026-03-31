@@ -27,7 +27,7 @@ set "common_test_suites=%JS_SUITES% %NATIVE_SUITES%&set build_addons=1&set build
 @rem Process arguments.
 set config=Release
 set target=Build
-set target_arch=x64
+set target_arch=x86
 set ltcg=
 set target_env=
 set noprojgen=
